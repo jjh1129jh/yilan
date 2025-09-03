@@ -1,8 +1,8 @@
 @font-face { font-family: 'S-CoreDream-7ExtraBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'S-CoreDream-4Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff'); font-weight: normal; font-style: normal;}
-$phone: "only screen and (max-width : 769px)";
-$ipad: "only screen and (min-device-width : 768px) and (max-device-width : 1023px)";
-$Pc: "screen and (min-width : 1024px)";
+$phone: "only screen and (max-width : 768px)";
+$ipad: "only screen and (min-width : 768px) and (max-width : 1279px)";
+$Pc: "screen and (min-width : 1280px)";
 @mixin desktop {
     @media (min-width: #{770px}) {
       @content;
@@ -378,6 +378,11 @@ body{
             top:20%;
             left:1.5%;
         }
+        @media #{$ipad}{
+            width:120px;
+            top:20%;
+            left:1.5%;
+        }
         img{
             width:100%;
         }
@@ -407,6 +412,9 @@ body{
     }
     .rightnav{
         @media #{$phone}{
+            display:none;
+        }
+        @media #{$ipad}{
             display:none;
         }
         .seaham{
@@ -480,6 +488,9 @@ body{
         @media #{$phone}{
             display:none;
         }
+        @media #{$ipad}{
+            display:none;
+        }
     }
 }
 // 컨테이너
@@ -489,6 +500,12 @@ body{
     padding-bottom: 50px;
     margin: 0 auto 110px;
     @media #{$phone}{
+        width:100%;
+        margin: 0 auto 60px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media #{$ipad}{
         width:100%;
         margin: 0 auto 60px;
         padding-top: 40px;
@@ -652,6 +669,11 @@ body{
                 float:right;
                 margin-right: 0;
             }
+            @media #{$ipad}{
+                width:50px;
+                float:right;
+                margin-right: 0;
+            }
             img{
                 width:100%;
             }
@@ -667,6 +689,10 @@ body{
                 left:0;
                 width:70%;
             }
+            @media #{$ipad}{
+                left:0;
+                width:70%;
+            }
             h3{
                 font-size:19px;
                 margin-bottom: 6px;
@@ -674,10 +700,19 @@ body{
                     font-size:12px;
                     line-height: 18px;
                 }
+                @media #{$ipad}{
+                    font-size:12px;
+                    line-height: 18px;
+                }
             }
             p{
                 font-size:14px;
                 @media #{$phone}{
+                    font-size:10px;
+                    letter-spacing: 1px;
+                    line-height: 18px;
+                }
+                @media #{$ipad}{
                     font-size:10px;
                     letter-spacing: 1px;
                     line-height: 18px;

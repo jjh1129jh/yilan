@@ -15,7 +15,7 @@
   width: 85%;
   margin: 0 auto;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .center {
     width: 85%;
   }
@@ -29,7 +29,7 @@ body {
 body .backgroundimg {
   opacity: 4.5%;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   body .backgroundimg {
     display: none;
   }
@@ -74,7 +74,7 @@ body .rightSub .goldbackground1 {
   height: 100%;
   background-color: #d19d65;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   body .rightSub .goldbackground1 {
     width: 75%;
   }
@@ -125,7 +125,7 @@ body .rightSub .goldbackground1 .searchBackground .searchBox > input::-ms-input-
 body .rightSub .goldbackground1 .searchBackground .searchBox > input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   body .rightSub .goldbackground1 .searchBackground .searchBox > input {
     font-size: 13px;
   }
@@ -156,7 +156,7 @@ body .rightSub .goldbackground1 .searchBackground .keyword > ul > li > a {
   font-size: 16px;
   color: white;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   body .rightSub .goldbackground1 .searchBackground .keyword > ul > li > a {
     font-size: 13px;
   }
@@ -171,7 +171,7 @@ body .rightSub .goldbackground2 {
   height: 100%;
   background-color: #d19d65;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   body .rightSub .goldbackground2 {
     width: 75%;
   }
@@ -237,7 +237,7 @@ body .rightSub .goldbackground3 {
   z-index: 1000;
   opacity: 97%;
 }
-@media screen and (min-width : 1024px) {
+@media screen and (min-width : 1280px) {
   body .rightSub .goldbackground3 {
     display: none;
   }
@@ -355,7 +355,14 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   left: 50px;
   bottom: 30px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .header .logo {
+    width: 120px;
+    top: 20%;
+    left: 1.5%;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .header .logo {
     width: 120px;
     top: 20%;
@@ -369,7 +376,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   margin-top: 20px;
   float: right;
 }
-@media screen and (min-width : 1024px) {
+@media screen and (min-width : 1280px) {
   .header .Mseaham {
     display: none;
   }
@@ -390,7 +397,12 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
 .header .Mseaham .Mhamburger img {
   width: 100%;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .header .rightnav {
+    display: none;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .header .rightnav {
     display: none;
   }
@@ -460,7 +472,12 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
 .header nav > ul > li:hover > .sub {
   display: block;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .header nav {
+    display: none;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .header nav {
     display: none;
   }
@@ -484,7 +501,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
           transform: translateX(-50%);
   background-color: #d19d65;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .Photo {
     font-size: 32px;
     margin: 80px 0 0;
@@ -500,7 +517,12 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   width: 100%;
   height: 100%;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .pcbanner {
+    display: none;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .pcbanner {
     display: none;
   }
@@ -508,14 +530,14 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
 
 .mobilebanner {
   margin: 0 auto;
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 .mobilebanner img {
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width : 1024px) {
+@media screen and (min-width : 1280px) {
   .mobilebanner {
     display: none;
   }
@@ -527,7 +549,13 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   padding-bottom: 50px;
   margin: 0 auto 110px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .swiper {
+    width: 100%;
+    margin: 0 auto 60px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .swiper {
     width: 100%;
     margin: 0 auto 60px;
@@ -563,7 +591,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
           transform: translateX(-50%);
   background-color: #d19d65;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .hotelname {
     font-size: 32px;
     margin: 60px 0 100px;
@@ -579,7 +607,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   margin-bottom: 20px;
   font-weight: 500;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .flex1 h2 {
     font-size: 20px;
   }
@@ -589,13 +617,13 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   line-height: 36px;
   letter-spacing: 1px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .flex1 .p1 {
     font-size: 14px;
     text-align: left;
   }
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .flex1 {
     margin: 0 auto 80px;
   }
@@ -619,7 +647,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
           transform: translateX(-50%);
   background-color: #d19d65;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .location {
     font-size: 32px;
     margin: 60px 0 110px;
@@ -635,7 +663,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
           justify-content: space-between;
   margin-bottom: 4%;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .flex2 {
     display: block;
   }
@@ -644,7 +672,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   width: 35%;
   letter-spacing: 1px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .flex2 .textBox2 {
     width: 98%;
     margin: 0 auto;
@@ -655,7 +683,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   font-weight: 500;
   margin: 24px 0;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .flex2 .textBox2 h2 {
     font-size: 16px;
   }
@@ -664,7 +692,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   line-height: 28px;
   font-size: 18px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .flex2 .textBox2 .p21, .flex2 .textBox2 .p22 {
     font-size: 14px;
   }
@@ -676,7 +704,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   width: 58%;
   position: relative;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .flex2 .map {
     width: 98%;
     margin: 50px auto;
@@ -690,18 +718,18 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   width: 100%;
   height: 100%;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .flex2 .map iframe {
     height: 100%;
   }
 }
 
 .footTopgray {
-  background-color: #494f5c;
+  background-color: rgb(73, 79, 92);
   height: 100px;
   z-index: 10;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .footTopgray {
     display: none;
   }
@@ -746,7 +774,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
 }
 
 .footBottomBlack {
-  background-color: #001b31;
+  background-color: rgb(0, 27, 49);
   height: 180px;
   z-index: 10;
 }
@@ -760,7 +788,14 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   float: left;
   margin-right: 100px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .footBottomBlack .footBottom .footLogo {
+    width: 50px;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .footBottomBlack .footBottom .footLogo {
     width: 50px;
     float: right;
@@ -777,9 +812,15 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   line-height: 26px;
-  color: #c2c2c2;
+  color: rgb(194, 194, 194);
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .footBottomBlack .footBottom .footText {
+    left: 0;
+    width: 70%;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .footBottomBlack .footBottom .footText {
     left: 0;
     width: 70%;
@@ -789,7 +830,13 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   font-size: 19px;
   margin-bottom: 6px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .footBottomBlack .footBottom .footText h3 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .footBottomBlack .footBottom .footText h3 {
     font-size: 12px;
     line-height: 18px;
@@ -798,7 +845,14 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
 .footBottomBlack .footBottom .footText p {
   font-size: 14px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .footBottomBlack .footBottom .footText p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 18px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .footBottomBlack .footBottom .footText p {
     font-size: 10px;
     letter-spacing: 1px;

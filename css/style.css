@@ -15,7 +15,7 @@
   width: 85%;
   margin: 0 auto;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .center {
     width: 85%;
   }
@@ -26,10 +26,14 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+body * {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
 body .backgroundimg {
   opacity: 4.5%;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   body .backgroundimg {
     display: none;
   }
@@ -74,7 +78,7 @@ body .rightSub .goldbackground1 {
   height: 100%;
   background-color: #d19d65;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   body .rightSub .goldbackground1 {
     width: 75%;
   }
@@ -125,7 +129,7 @@ body .rightSub .goldbackground1 .searchBackground .searchBox > input::-ms-input-
 body .rightSub .goldbackground1 .searchBackground .searchBox > input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   body .rightSub .goldbackground1 .searchBackground .searchBox > input {
     font-size: 13px;
   }
@@ -156,7 +160,7 @@ body .rightSub .goldbackground1 .searchBackground .keyword > ul > li > a {
   font-size: 16px;
   color: white;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   body .rightSub .goldbackground1 .searchBackground .keyword > ul > li > a {
     font-size: 13px;
   }
@@ -171,7 +175,7 @@ body .rightSub .goldbackground2 {
   height: 100%;
   background-color: #d19d65;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   body .rightSub .goldbackground2 {
     width: 75%;
   }
@@ -237,7 +241,7 @@ body .rightSub .goldbackground3 {
   z-index: 1000;
   opacity: 97%;
 }
-@media screen and (min-width : 1024px) {
+@media screen and (min-width : 1280px) {
   body .rightSub .goldbackground3 {
     display: none;
   }
@@ -355,7 +359,14 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   left: 50px;
   bottom: 30px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .header .logo {
+    width: 120px;
+    top: 20%;
+    left: 1.5%;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .header .logo {
     width: 120px;
     top: 20%;
@@ -369,7 +380,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   margin-top: 20px;
   float: right;
 }
-@media screen and (min-width : 1024px) {
+@media screen and (min-width : 1280px) {
   .header .Mseaham {
     display: none;
   }
@@ -390,7 +401,12 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
 .header .Mseaham .Mhamburger img {
   width: 100%;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .header .rightnav {
+    display: none;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .header .rightnav {
     display: none;
   }
@@ -460,19 +476,29 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
 .header nav > ul > li:hover > .sub {
   display: block;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .header nav {
+    display: none;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .header nav {
     display: none;
   }
 }
 
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .pcbanner {
+    display: none;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .pcbanner {
     display: none;
   }
 }
 
-@media screen and (min-width : 1024px) {
+@media screen and (min-width : 1280px) {
   .mobilebanner {
     display: none;
   }
@@ -482,7 +508,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   margin-top: 100px;
   z-index: 10;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .container {
     margin-top: 80px;
   }
@@ -494,20 +520,21 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   text-align: center;
   font-size: 50px;
   margin-bottom: 100px;
-  line-height: 50px;
+  line-height: 130%;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .container .taiwanintroduce h2 {
     font-size: 26px;
     margin-bottom: 80px;
   }
 }
-@media screen and (min-width : 1024px) {
+@media screen and (min-width : 1280px) {
   .container .taiwanintroduce h2 br {
     display: none !important;
   }
 }
 .container .taiwanintroduce .TaiwanTI {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,91 +542,100 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .container .taiwanintroduce .TaiwanTI {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
+  .container .taiwanintroduce .TaiwanTI {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .container .taiwanintroduce .TaiwanTI .TaiwanText {
-  position: relative;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
+  .container .taiwanintroduce .TaiwanTI .TaiwanText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .container .taiwanintroduce .TaiwanTI .TaiwanText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .container .taiwanintroduce .TaiwanTI .TaiwanText p {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 720px;
+  width: 90%;
   white-space: normal;
   font-size: 16px;
   line-height: 40px;
   letter-spacing: 1.2px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .container .taiwanintroduce .TaiwanTI .TaiwanText p {
-    position: unset;
-    font-size: 12px;
     width: 100%;
-    top: 50%;
-    -webkit-transform: translateY(-5%);
-            transform: translateY(-5%);
+    font-size: 12px;
     line-height: 25px;
   }
 }
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
+  .container .taiwanintroduce .TaiwanTI .TaiwanText p {
+    width: 100%;
+  }
+}
 .container .taiwanintroduce .TaiwanTI .TaiwanImg {
-  float: right;
-  z-index: 10;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .container .taiwanintroduce .TaiwanTI .TaiwanImg {
-    float: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    width: 100%;
   }
 }
-.container .taiwanintroduce .TaiwanTI .TaiwanImg .Timg1 {
-  float: left;
-  width: 302.5px;
-  margin-right: 15px;
-}
-@media screen and (max-width: 1024px) {
-  .container .taiwanintroduce .TaiwanTI .TaiwanImg .Timg1 {
-    margin-top: 20px;
+@media only screen and (max-width : 768px) {
+  .container .taiwanintroduce .TaiwanTI .TaiwanImg {
+    width: 100%;
   }
 }
-@media screen and (max-width: 600px) {
-  .container .taiwanintroduce .TaiwanTI .TaiwanImg .Timg1 {
-    width: 150px;
-    margin-right: 8px;
-  }
-}
-.container .taiwanintroduce .TaiwanTI .TaiwanImg .Timg1 img {
-  width: 100%;
-}
-.container .taiwanintroduce .TaiwanTI .TaiwanImg .Timg2 {
-  float: right;
-  width: 400px;
-}
-@media screen and (max-width: 1024px) {
-  .container .taiwanintroduce .TaiwanTI .TaiwanImg .Timg2 {
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .container .taiwanintroduce .TaiwanTI .TaiwanImg .Timg2 {
-    width: 200px;
-  }
-}
-.container .taiwanintroduce .TaiwanTI .TaiwanImg .Timg2 img {
+.container .taiwanintroduce .TaiwanTI .TaiwanImg img {
   width: 100%;
 }
 .container .yilanintroduce {
   margin: 100px 0 100px 0;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .container .yilanintroduce {
     margin: 80px 0 80px 0;
   }
@@ -612,7 +648,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   font-size: 50px;
   margin-bottom: 100px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .container .yilanintroduce h2 {
     font-size: 26px;
     margin-bottom: 80px;
@@ -626,44 +662,107 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
+  .container .yilanintroduce .yilanTM {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .container .yilanintroduce .yilanTM {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+}
 .container .yilanintroduce .yilanTM .yilanText {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
+  .container .yilanintroduce .yilanTM .yilanText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .container .yilanintroduce .yilanTM .yilanText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .container .yilanintroduce .yilanTM .yilanText p {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 720px;
+  width: 90%;
   white-space: normal;
   font-size: 16px;
   line-height: 40px;
   letter-spacing: 1.2px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .container .yilanintroduce .yilanTM .yilanText p {
-    position: unset;
-    font-size: 12px;
     width: 100%;
-    top: 50%;
-    -webkit-transform: translateY(-5%);
-            transform: translateY(-5%);
+    font-size: 12px;
     line-height: 25px;
   }
 }
-.container .yilanintroduce .yilanTM .yilanMap {
-  float: right;
-  z-index: 10;
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
+  .container .yilanintroduce .yilanTM .yilanText p {
+    width: 100%;
+  }
 }
-@media only screen and (max-width : 769px) {
+.container .yilanintroduce .yilanTM .yilanMap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .container .yilanintroduce .yilanTM .yilanMap {
-    display: none;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .container .yilanintroduce .yilanTM .yilanMap {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .container .yilanGallery {
   margin-bottom: 100px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .container .yilanGallery {
     margin-bottom: 80px;
   }
@@ -676,7 +775,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   font-size: 50px;
   margin-bottom: 100px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .container .yilanGallery h2 {
     font-size: 26px;
     margin-bottom: 80px;
@@ -694,24 +793,40 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media only screen and (max-width : 769px) {
-  .container .yilanGallery .yilanImg {
-    display: none;
-  }
-}
 .container .yilanGallery .yilanImg .yImg3 {
   z-index: 10;
 }
 .container .yilanGallery .yilanImg a {
   margin: 10px auto;
 }
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
+  .container .yilanGallery .yilanImg a {
+    display: none;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .container .yilanGallery .yilanImg a {
+    display: none;
+  }
+}
 .container .yilanGallery .MyilanImg {
   margin: 0 auto;
+  aspect-ratio: 510/363.375;
+  padding-left: 10px;
 }
-@media screen and (min-width : 1024px) {
+@media screen and (min-width : 1280px) {
   .container .yilanGallery .MyilanImg {
     display: none;
   }
+}
+.container .yilanGallery .MyilanImg ul {
+  width: 100%;
+  height: 100%;
+}
+.container .yilanGallery .MyilanImg ul li {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 
 .footTopgray {
@@ -719,7 +834,7 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   height: 100px;
   z-index: 10;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   .footTopgray {
     display: none;
   }
@@ -778,7 +893,14 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   float: left;
   margin-right: 100px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .footBottomBlack .footBottom .footLogo {
+    width: 50px;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .footBottomBlack .footBottom .footLogo {
     width: 50px;
     float: right;
@@ -797,7 +919,13 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   line-height: 26px;
   color: #fff;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .footBottomBlack .footBottom .footText {
+    left: 0;
+    width: 70%;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .footBottomBlack .footBottom .footText {
     left: 0;
     width: 70%;
@@ -807,7 +935,13 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
   font-size: 19px;
   margin-bottom: 6px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .footBottomBlack .footBottom .footText h3 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .footBottomBlack .footBottom .footText h3 {
     font-size: 12px;
     line-height: 18px;
@@ -816,7 +950,14 @@ body .rightSub .goldbackground3 .MnavBackground .Mlogo img {
 .footBottomBlack .footBottom .footText p {
   font-size: 14px;
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
+  .footBottomBlack .footBottom .footText p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 18px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width : 1279px) {
   .footBottomBlack .footBottom .footText p {
     font-size: 10px;
     letter-spacing: 1px;
